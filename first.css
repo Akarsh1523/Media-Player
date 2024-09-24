@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(238, 238, 238);
+}
+
+header {
+    height: 5rem;
+    /* background-color: red; */
+}
+
+.titlebar {
+    height: 50%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    height: 70%;
+    margin-left: 1rem;
+}
+
+.title {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.menubar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 50%;
+}
+
+main {
+    height: calc(100vh - 8rem);
+    background-color: black;
+}
+
+footer {
+    height: 3rem;
+    background-color: grey;
+}
+
+.menu {
+    margin-left: 2rem;
+}
+
+.menuItems {
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+    top: 35px;
+    width: 7rem;
+    display: none;
+}
+
+.menu:hover .menuItems {
+    display: block;
+}
+
+.menu {
+    position: relative;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+li:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.menu:hover .menu-btn {
+    color: red;
+    cursor: pointer;
+}
+
+.menu-btn {
+    margin-top: 1rem;
+    height: 3rem;
+    align-items: center;
+    padding: auto;
+}
+
+.video-input {
+    display: none;
+}
+
+.toast {
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    top: 80px;
+    right: 40px;
+    display: none;
+}
